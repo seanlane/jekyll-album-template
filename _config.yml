@@ -6,7 +6,7 @@ title:               Jekyll Albums
 tagline:             (Mostly) Automated Albums in Jekyll
 url:                 ""
 paginate:            1
-baseurl:             "jekyll-album-template/"
+baseurl:             "jekyll-album-template"
 exclude:
   - album_source/
   - gulpfile.js
