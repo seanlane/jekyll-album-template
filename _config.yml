@@ -7,6 +7,14 @@ tagline:             (Mostly) Automated Albums in Jekyll
 url:                 ""
 paginate:            1
 baseurl:             ""
+exclude:
+  - album_source/
+  - gulpfile.js
+  - LICENSE.md
+  - node_modules/
+  - package.json
+  - README.md
+
 
 # Assets
 #
