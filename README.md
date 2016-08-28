@@ -121,6 +121,11 @@ If you host your code on GitHub, you can use [GitHub Pages](https://pages.github
   2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/jekyll-album-template`, use `http://username.github.io/jekyll-album-template/`. **Be sure to include the trailing slash.**
 3. Done! Head to your GitHub Pages URL or custom domain.
 
+If you want to serve the site somewhere else, like a webhost like DreamHost, Bluehost, or somewhere similar, do the following:
+
+1. Run `$ gulp` and then `$ jekyll build`.
+2. Copy the contents of the `./_site` folder to your server where it can be hosted.
+
 No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
 
 ## Options
