@@ -1,0 +1,26 @@
+{
+  "name": "jekyll-album-template",
+  "version": "1.0.0",
+  "description": "A jekyll template that automatically generates photo albums",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanlane/jekyll-template-album.git"
+  },
+  "author": "Sean Lane",
+  "bugs": {
+    "url": "https://github.com/seanlane/jekyll-template-album/issues"
+  },
+  "homepage": "https://github.com/seanlane/jekyll-template-album#readme",
+  "devDependencies": {
+    "concurrent-transform": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-filelog": "^0.4.1",
+    "gulp-image-resize": "^0.10.0"
+  }
+}

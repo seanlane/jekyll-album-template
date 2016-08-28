@@ -2,9 +2,9 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://lanefamily.us/elizabeth
+title:               Jekyll Albums
+tagline:             (Mostly) Automated Albums in Jekyll
+url:                 ""
 paginate:            1
 baseurl:             ""
 
@@ -17,16 +17,14 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Sean Lane
+  url:               https://seanlane.net
 
 # Custom vars
-version:             2.0.0
+version:             1.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/seanlane/jekyll-album-tempalte
 
 # Gems
 gems:
   - jekyll-paginate
-  - jekyll-gist

@@ -17,6 +17,152 @@
 // Designed, built, and released under MIT license by @mdo. Learn more at
 // https://github.com/poole/poole.
 
+/* === Flickity === */
+
+.lightbox {
+  line-height: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+// Flickity requirements
+
+.flickity-enabled {
+	position: relative;
+	
+	&:focus { 
+		outline: none;
+	}
+	
+	&.flickity-enabled.is-draggable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+		
+		.flickity-viewport {
+			cursor: move;
+			cursor: -webkit-grab;
+			cursor: grab;
+		}
+		
+		.flickity-viewport.is-pointer-down {
+			cursor: -webkit-grabbing;
+			cursor: grabbing;
+		}
+	}
+	
+	.flickity-viewport {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		height: 100% !important;
+	}
+	
+	.flickity-slider {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// Lightbox requirements
+
+#lightbox {
+	background: rgba(255,255,255, 0.9);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 999;
+	
+	.slider {
+		width: 100%;
+		height: 100%;
+		
+		.slide {
+			width: 100%;
+			height: 100%;
+	
+			.frame {
+				width: 100%;
+				height: 100%;
+				display: table;
+				table-layout: fixed;
+				
+				.valign {
+					width: 100%;
+					height: 100%;
+					display: table-cell;
+					text-align: center;
+					vertical-align: middle;
+					line-height: 0;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+          }
+
+          .contain-img {
+          	margin: auto;
+          }
+				}
+			}
+		}
+	}
+  
+  // styling for lightbox
+	
+	.exit {
+		position: absolute;
+		top: 0;
+		right: 0;
+    width: 44px;
+    padding: 10px 0;
+    text-align: center;
+    background: #ddd;
+		cursor: pointer;
+    
+    &::after {
+      content: 'exit';
+    }
+	}
+	
+	/*
+	.prev, .next {
+		position: absolute;
+		top: 50%;
+    margin-top: -22px;
+    width: 44px;
+    padding: 10px 0;
+    text-align: center;
+    background: #ddd;
+		cursor: pointer;
+	}
+	
+	.prev {
+		left: 0;
+    
+    &::after {
+      content: 'prev';
+    }
+	}
+	
+	.next {
+		right: 0;
+    
+    &::after {
+      content: 'next';
+    }
+	}
+	*/
+}
+
+/* === End Flickity */
+
 @import "variables";
 @import "base";
 @import "type";

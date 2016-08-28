@@ -1,33 +1,31 @@
 ---
-layout: default
-title: Home
+layout: album
+album: testAlbum
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
+{% assign album_path = 'assets/albums/' | append: page.album %}
+{% assign thumbnail_path = album_path | append: '/thumbnails' %}
+<p>
+	This is a Jekyll template that is geared towards generating automated photo galleries. The idea is that once the template and dependancies are in place, all you need to do is add images to the pertinent directory, run Gulp to process the images for each album, and then run Jekyll to build the site. 
+</p>
+<p>
+	A sample of the album produced is shown below. It features a responsive design that lazily loads the image previews, and also utilizes a lightbox feature to present larger images. Try clicking one of the images below, and using the mouse, keyboard, or touch screen swipes to navigate. The lightbox images are also lazily loaded to preserve bandwidth as much as possible.
+</p>
+<p>
+	For further information, including documentation, check out the repository at <a href="https://github.com/seanlane/jekyll-album-template">GitHub</a>.
+</p>
+<div class="pure-g lightbox">
+{% for image in site.static_files reversed %}
+	{% if image.extname == '.jpg' or image.extname == '.png' %}
+    {% if image.path contains album_path %}
+    	{% unless image.path contains 'thumbnails' %}
+	    	<div class="image pure-u-1 pure-u-md-1-4">
+	    		<a href="{{ site.baseurl }}{{ image.path }}">
+	        	<img class="pure-img" src="{{ site.baseurl}}/assets/images/dashinfinity.gif" data-src="{{ site.baseurl }}{{ image.path | split: album_path | last | prepend: thumbnail_path | prepend: '/' }}" alt="image" />
+	        </a>
+	      </div>
+	     {% endunless %}
+    {% endif %}
   {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+{% endfor %}
 </div>
