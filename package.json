@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seanlane/jekyll-template-album.git"
+    "url": "git+https://github.com/seanlane/jekyll-album-template.git"
   },
   "author": "Sean Lane",
   "bugs": {
-    "url": "https://github.com/seanlane/jekyll-template-album/issues"
+    "url": "https://github.com/seanlane/jekyll-album-template/issues"
   },
-  "homepage": "https://github.com/seanlane/jekyll-template-album#readme",
+  "homepage": "https://github.com/seanlane/jekyll-album-template",
   "devDependencies": {
     "concurrent-transform": "^1.0.0",
     "gulp": "^3.9.1",

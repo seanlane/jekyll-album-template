@@ -31,7 +31,7 @@ author:
 # Custom vars
 version:             1.0.0
 github:
-  repo:              https://github.com/seanlane/jekyll-album-tempalte
+  repo:              https://github.com/seanlane/jekyll-album-template
 
 # Gems
 gems:
