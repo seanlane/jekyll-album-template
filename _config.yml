@@ -6,7 +6,7 @@ title:               Jekyll Albums
 tagline:             (Mostly) Automated Albums in Jekyll
 url:                 ""
 paginate:            1
-baseurl:             ""
+baseurl:             "jekyll-album-template"
 exclude:
   - album_source/
   - gulpfile.js
@@ -31,7 +31,7 @@ author:
 # Custom vars
 version:             1.0.0
 github:
-  repo:              https://github.com/seanlane/jekyll-album-tempalte
+  repo:              https://github.com/seanlane/jekyll-album-template
 
 # Gems
 gems:
