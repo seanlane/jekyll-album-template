@@ -11,7 +11,7 @@ Project / Library | Use |
 [Poole](http://getpoole.com) | Base jekyll template and helped me with the README
 [Flickery](http://flickity.metafizzy.co/) | Touch responsive image presentation
 [jQuery Unveil](http://luis-almeida.github.com/unveil) | Lazy loading of thumbnails
-[jQuery 3] | Dependancy for jQuery Unveil
+[jQuery 3](https://jquery.com/) | Dependancy for jQuery Unveil
 [Pure CSS Grids](http://purecss.io/grids/) | Responsive Grids for the thumbnails
 [Lightbox with Flickity by Jim Hyland](http://codepen.io/jimahyland/pen/GZGrEa/) | Lightbox for showing main imamges
 [GulpJS](http://gulpjs.com/) | Automation of processing images and some other tasks
